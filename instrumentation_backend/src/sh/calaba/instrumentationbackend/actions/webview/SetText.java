@@ -28,7 +28,7 @@ public class SetText implements Action {
 			firstElement.remove("html");
 			String firstElemntJson = QueryHelper.toJsonString(firstElement);
 			
-			String result = QueryHelper.executeJavascriptInWebview("set_text.js", firstElemntJson, "fooo");
+			String result = QueryHelper.executeJavascriptInWebview("set_text.js", firstElemntJson, args[0]);
 	    	return new Result(true, result);
     	} catch (Exception e) {
     		throw new RuntimeException(e);
