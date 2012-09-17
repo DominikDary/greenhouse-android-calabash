@@ -1,4 +1,4 @@
-Then /^I enter "([^\"]*)" into imput field with id "([^\"]*)"$/ do |text, css|
+Then /^I enter "([^\"]*)" into input field with id "([^\"]*)"$/ do |text, css|
   performAction('set_text',text, css)
 end
 
