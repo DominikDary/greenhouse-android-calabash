@@ -2,8 +2,8 @@ Feature: Login feature
   Scenario: As a valid user I can log into my app
     When I press "Sign In"
     Then I wait for progress
-    When I enter "craig@habuma.com" into imput field with id "input#login"
-    And I enter "freebird" into imput field with id "input#password"
+    When I enter "craig@habuma.com" into input field with id "input#login"
+    And I enter "freebird" into input field with id "input#password"
     Then I press the button with id "form#signin p button"
     Then I wait for 5 seconds
     Then I press the button with id "button"
